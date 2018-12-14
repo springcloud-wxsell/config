@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/springcloud-wxsell/config-repo.git
+          username: wang_wei608@163.com
+          password: XX.wait520
+  rabbitmq:
+    host: 192.168.0.111
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
